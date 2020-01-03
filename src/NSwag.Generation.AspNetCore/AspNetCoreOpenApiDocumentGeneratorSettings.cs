@@ -29,6 +29,9 @@ namespace NSwag.Generation.AspNetCore
         /// <summary>Gets or sets the ASP.NET Core API Explorer group names to include (default: empty/null = all, often used to select API version).</summary>
         public string[] ApiGroupNames { get; set; }
 
+        /// <summary>Gets or sets whether to generate documents per controller (default: false).</summary>
+        public bool PerController { get; set; } = false;
+
         /// <summary>Gets or sets a value indicating whether parameters without default value are always required
         /// (legacy, default: false).</summary>
         /// <remarks>Use BindRequiredAttribute to mark parameters as required.</remarks>
